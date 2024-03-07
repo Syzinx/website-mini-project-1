@@ -7,8 +7,8 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #111; 
-    color: #FFFFEC; /* Hampir putih */
-    padding: 20px; /* Menambahkan padding keseluruhan body */
+    color: #FFFFEC; 
+    padding: 20px; 
 }
 
 header {
@@ -16,7 +16,7 @@ header {
     padding: 30px 0;
     border-radius: 10px;
     background-color: #222; 
-    color: #FFFFEC; /* Hampir putih */
+    color: #FFFFEC; 
     margin-bottom: 6px; 
 }
 
@@ -41,7 +41,7 @@ nav ul li a {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #fff; /* Ubah warna teks menjadi putih */
+    color: #fff; 
     font-weight: bold;
     background-color: #222;  
     border: 2px solid rgb(254, 255, 254);
@@ -67,7 +67,7 @@ section {
 .about-section {
     margin: 50px auto;
     padding: 20px;
-    background-image: url(download.jpeg);
+    background-image: url(assets/download.jpeg);
     color: #FFFFEC;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -94,12 +94,12 @@ section {
 @media only screen and (min-width: 600px) {
     .about-content {
         flex-direction: row;
-        justify-content: center; /* Pusatkan konten pada layar lebar */
+        justify-content: center; 
     }
 
     .about-content img {
-        margin-right: 20px; /* Mengatur jarak antara gambar dan teks pada layar lebar */
-        margin-left: 0; /* Menghapus margin kiri pada layar lebar */
+        margin-right: 20px; 
+        margin-left: 0; 
     }
 }
 
@@ -179,7 +179,7 @@ section {
 #certificate {
     text-align: center;
     margin: 50px auto;
-    background-image: url(tenor.gif);
+    background-image: url(assets/tenor.gif);
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center; 
@@ -199,10 +199,29 @@ section {
 
 .certificate-image {
     position: relative;
-    width: calc(25% - 20px);
-    margin-bottom: 40px;
-    margin-top: 80px;
+    width: calc(25% - 40px);
+    margin: 20px;
     padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1200px) {
+    .certificate-image {
+        width: calc(33.33% - 40px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .certificate-image {
+        width: calc(50% - 40px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .certificate-image {
+        width: calc(100% - 40px);
+    }
 }
 
 .certificate-image img {
@@ -253,7 +272,6 @@ section {
     color: #F1E4C3;
 }
 
-/* Media queries for responsiveness */
 @media only screen and (max-width: 600px) {
     .about-content {
         flex-direction: column;
@@ -285,22 +303,20 @@ section {
     }
 }
 
-/* Untuk perangkat dengan lebar layar maksimum 768px */
 @media only screen and (max-width: 768px) {
     .about-content img {
-        width: 200px; /* Mengurangi lebar gambar pada layar kecil */
+        width: 200px; 
         height: 200px;
     }
 
     .education__card {
-        margin-left: 10px; /* Menyesuaikan margin pada kartu pendidikan */
+        margin-left: 10px; 
         margin-right: 10px;
     }
 }
 
-/* Untuk perangkat dengan lebar layar maksimum 992px */
 @media only screen and (max-width: 992px) {
     .education__grid {
-        justify-content: center; /* Mengatur penataan ulang kartu pendidikan ke pusat pada lebar layar sedang */
+        justify-content: center;
     }
 }
