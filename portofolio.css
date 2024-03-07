@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111; 
+    color: #FFFFEC; /* Hampir putih */
+    padding: 20px; /* Menambahkan padding keseluruhan body */
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 10px;
+    background-color: #222; 
+    color: #FFFFEC; /* Hampir putih */
+    margin-bottom: 6px; 
+}
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;  
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff; /* Ubah warna teks menjadi putih */
+    font-weight: bold;
+    background-color: #222;  
+    border: 2px solid rgb(254, 255, 254);
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #FFFFEC; 
+    color: #222; 
+}
+
+section {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #3b3b3b;
+    color: #FFFFEC;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-section {
+    margin: 50px auto;
+    padding: 20px;
+    background-image: url(download.jpeg);
+    color: #FFFFEC;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about-content img {
+    width: 280px; 
+    height: 280px; 
+    border-radius: 50%; 
+    margin-bottom: 20px;
+    border:5px #FFFFEC;
+    border-style: dashed;
+}
+
+@media only screen and (min-width: 600px) {
+    .about-content {
+        flex-direction: row;
+        justify-content: center; /* Pusatkan konten pada layar lebar */
+    }
+
+    .about-content img {
+        margin-right: 20px; /* Mengatur jarak antara gambar dan teks pada layar lebar */
+        margin-left: 0; /* Menghapus margin kiri pada layar lebar */
+    }
+}
+
+.about-content ul{
+    align-items: start;
+    text-align: start;
+}
+
+.about-content h3 {
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.about-description {
+    font-size: 17px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 30px;
+    text-align: justify;
+    justify-content: center;
+}
+
+.education__grid {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+}
+
+.education__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 30px;
+    margin-left: 120px; 
+    margin-right: 120px; 
+    margin-bottom: 20px;
+    background-color: #464646;
+    border-radius: 5px;
+    width: calc(50% - 10px);
+    max-width: 300px; 
+    cursor: pointer; 
+    transition: 1.1s;
+}
+
+.education__card i {
+    font-size: 1.5rem;
+    color: #FFFFEC;
+}
+
+.education__card h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #FFFFEC;
+}
+
+.education__card p {
+    font-size: 1rem;
+    color: #888;
+}
+
+.education__card a {
+    color: #FFFFEC;
+    text-decoration: none;
+}
+
+.education__card:hover {
+    box-shadow: 0 0 10px #FFFFEC; 
+    transform: scale(1.1);
+}
+
+.education__card a:hover {
+    text-decoration: underline;
+}
+
+#certificate {
+    text-align: center;
+    margin: 50px auto;
+    background-image: url(tenor.gif);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+#certificate h2 {
+    color: #FFFFEC;  
+    margin-bottom: 20px;
+}
+
+.certificate-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px; 
+}
+
+.certificate-image {
+    position: relative;
+    width: calc(25% - 20px);
+    margin-bottom: 40px;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.certificate-image img {
+    height: 250px;
+    transition: transform 0.3s ease;
+}
+
+.certificate-image:hover img {
+    transform: scale(1.1);
+}
+
+.certificate-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+    background-color: #f9f9f9; 
+
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.certificate-image:nth-child(odd) .certificate-text {
+    background-color: #eaf2fd; 
+}
+
+.certificate-image:hover .certificate-text {
+    opacity: 1;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons .icon {
+    font-size: 50px;
+    color: #FFFFEC;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.icons .icon:hover {
+    color: #F1E4C3;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        margin: 0 auto 20px auto;
+    }
+
+    .about-content h3 {
+        margin-left: 0;
+    }
+
+    .about-description {
+        margin: 0 20px 30px 20px;
+    }
+
+    .education__grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education__card {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Untuk perangkat dengan lebar layar maksimum 768px */
+@media only screen and (max-width: 768px) {
+    .about-content img {
+        width: 200px; /* Mengurangi lebar gambar pada layar kecil */
+        height: 200px;
+    }
+
+    .education__card {
+        margin-left: 10px; /* Menyesuaikan margin pada kartu pendidikan */
+        margin-right: 10px;
+    }
+}
+
+/* Untuk perangkat dengan lebar layar maksimum 992px */
+@media only screen and (max-width: 992px) {
+    .education__grid {
+        justify-content: center; /* Mengatur penataan ulang kartu pendidikan ke pusat pada lebar layar sedang */
+    }
+}
